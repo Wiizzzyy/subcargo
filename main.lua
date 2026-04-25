@@ -223,12 +223,12 @@ task.spawn(function()
 		end
 		if GenerateReloadSpeed.Value then
 			plrAct(function(player)
-				genRemote:FireServer(player.DataStoreValues.ReloadSpeed, 10)
+				genRemote:FireServer(player.Buffs.ReloadSpeed, 10)
 			end)
 		end
 		if GenerateRepairSpeed.Value then
 			plrAct(function(player)
-				genRemote:FireServer(player.DataStoreValues.RepairSpeed, 10)
+				genRemote:FireServer(player.Buffs.RepairSpeed, 10)
 			end)
 		end
 	end
